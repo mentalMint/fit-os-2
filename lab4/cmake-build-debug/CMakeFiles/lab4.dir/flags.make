@@ -6,5 +6,5 @@ C_DEFINES =
 
 C_INCLUDES = 
 
-C_FLAGS = -g -fdiagnostics-color=always -std=gnu99
+C_FLAGS =  -pthread -g -fdiagnostics-color=always -std=gnu99
 

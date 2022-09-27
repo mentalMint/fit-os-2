@@ -4,10 +4,19 @@
 #include <string.h>
 #include <unistd.h>
 
+#define CLEANUP_POP_EXECUTE 1
+
+void cleanup_handler(void *arg)
+{
+    printf("Called clean-up handler\n");
+}
+
 void *print_text() {
+    pthread_cleanup_push(cleanup_handler, NULL);
     for (int i = 0; i < 100000; i++) {
         printf("Line %d\n", i);
     }
+    pthread_cleanup_pop(CLEANUP_POP_EXECUTE);
     return NULL;
 }
 
