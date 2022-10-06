@@ -5,7 +5,10 @@
 #include <unistd.h>
 
 void* sort_by_length(const char* line) {
-    usleep(strlen(line) * 10000);
+    if (0 != usleep(strlen(line) * 10000)) {
+        perror("Error in usleep");
+        return (void *) EXIT_FAILURE;
+    }
     printf("%s\n", line);
     return (void *) EXIT_SUCCESS;
 }

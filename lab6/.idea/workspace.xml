@@ -17,10 +17,8 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abb00167-bed6-48b6-b3e0-5336270ebad7" name="Changes" comment="Initial commit">
-      <change afterPath="$PROJECT_DIR$/compile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/execute" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="abb00167-bed6-48b6-b3e0-5336270ebad7" name="Changes" comment="Make sort">
+      <change beforePath="$PROJECT_DIR$/execute" beforeDir="false" afterPath="$PROJECT_DIR$/execute" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -84,7 +82,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665061152402</updated>
-      <workItem from="1665061153903" duration="1168000" />
+      <workItem from="1665061153903" duration="2021000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1665061265354</created>
@@ -93,7 +91,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665061265354</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Make sort">
+      <created>1665062359907</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1665062359907</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -112,6 +117,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Initial commit" />
+    <MESSAGE value="Make sort" />
+    <option name="LAST_COMMIT_MESSAGE" value="Make sort" />
   </component>
 </project>
