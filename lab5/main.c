@@ -6,16 +6,15 @@
 
 #define CLEANUP_POP_EXECUTE 1
 
-void cleanup_handler(void *arg)
-{
+void cleanup_handler(void* arg) {
     printf("Called clean-up handler\n");
 }
 
-void *print_text() {
-    pthread_cleanup_push(cleanup_handler, NULL);
-    for (int i = 0; i < 100000; i++) {
-        printf("Line %d\n", i);
-    }
+void* print_text() {
+    pthread_cleanup_push(cleanup_handler, NULL) ;
+            for (int i = 0; i < 100000; i++) {
+                printf("Line %d\n", i);
+            }
     pthread_cleanup_pop(CLEANUP_POP_EXECUTE);
     return NULL;
 }
@@ -25,7 +24,7 @@ int main() {
     int return_value = pthread_create(&new_thread, NULL, print_text, NULL);
     if (0 != return_value) {
         fprintf(stderr, "Cannot create the thread: %s", strerror(return_value));
-        pthread_exit((void *) EXIT_FAILURE);
+        pthread_exit((void*) EXIT_FAILURE);
     }
 
     sleep(2);
@@ -38,7 +37,7 @@ int main() {
     return_value = pthread_join(new_thread, &thread_exit_status);
     if (0 != return_value) {
         fprintf(stderr, "Cannot join a thread: %s\n", strerror(return_value));
-        pthread_exit((void *) EXIT_FAILURE);
+        pthread_exit((void*) EXIT_FAILURE);
     }
 
     if (thread_exit_status == PTHREAD_CANCELED) {
@@ -47,5 +46,5 @@ int main() {
         printf("Thread completed by pthread_exit\n");
     }
 
-    pthread_exit((void *) EXIT_SUCCESS);
+    pthread_exit((void*) EXIT_SUCCESS);
 }

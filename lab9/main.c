@@ -3,10 +3,15 @@
 #include <stdlib.h>
 #include <string.h>
 #include <limits.h>
+#include <signal.h>
 
 #define STEPS_NUM 100
 
 long int threads_count;
+
+void termination_handler(int signum) {
+
+}
 
 double* calculate_pi_part(const int* thread_number) {
     double* pi_part = (double*) malloc(sizeof(double));
@@ -44,6 +49,14 @@ int main(int argc, char* argv[]) {
             pthread_exit((void*) EXIT_FAILURE);
         }
     }
+
+    struct sigaction new_action;
+
+    /* Set up the structure to specify the new action. */
+    new_action.sa_handler = termination_handler;
+    sigemptyset(&new_action.sa_mask);
+    new_action.sa_flags = 0;
+    sigaction (SIGINT, &new_action, NULL);
 
     double pi_div_by_4 = 0;
     double* thread_return_value = NULL;
