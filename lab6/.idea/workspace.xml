@@ -17,9 +17,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="abb00167-bed6-48b6-b3e0-5336270ebad7" name="Changes" comment="Make sort">
-      <change beforePath="$PROJECT_DIR$/execute" beforeDir="false" afterPath="$PROJECT_DIR$/execute" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
+    <list default="true" id="abb00167-bed6-48b6-b3e0-5336270ebad7" name="Changes" comment="Add usleep error processing">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab9/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../lab9/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +82,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1665061152402</updated>
-      <workItem from="1665061153903" duration="2021000" />
+      <workItem from="1665061153903" duration="2807000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1665061265354</created>
@@ -98,7 +98,14 @@
       <option name="project" value="LOCAL" />
       <updated>1665062359907</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add usleep error processing">
+      <created>1665063391513</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1665063391513</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -118,6 +125,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial commit" />
     <MESSAGE value="Make sort" />
-    <option name="LAST_COMMIT_MESSAGE" value="Make sort" />
+    <MESSAGE value="Add usleep error processing" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add usleep error processing" />
   </component>
 </project>
