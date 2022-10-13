@@ -49,12 +49,12 @@ void calculate_pi_part(struct thread_data* data) {
         pthread_exit((void*) EXIT_FAILURE);
     }
 
-    for (int i = 0;; i++) {
+    for (long i = data->thread_number; i * 4 + 3 <= LONG_MAX; i += threads_count) {
         if (i % 10000000 == 0 && i != 0) {
             pthread_testcancel();
         }
-        data->result += 1.0 / ((i * (int) threads_count + data->thread_number) * 4.0 + 1.0);
-        data->result -= 1.0 / ((i * (int) threads_count + data->thread_number) * 4.0 + 3.0);
+        data->result += 1.0 / (double) (i * 4 + 1);
+        data->result -= 1.0 / (double) (i * 4 + 3);
     }
 }
 
