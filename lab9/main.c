@@ -50,7 +50,7 @@ void calculate_pi_part(struct thread_data* data) {
     }
 
     for (long i = data->thread_number; i * 4 + 3 <= LONG_MAX; i += threads_count) {
-        if (i % 10000000 == 0 && i != 0) {
+        if ((i / threads_count) % 10000000 == 0 && i != data->thread_number) {
             pthread_testcancel();
         }
         data->result += 1.0 / (double) (i * 4 + 1);
