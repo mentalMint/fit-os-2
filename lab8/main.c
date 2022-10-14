@@ -34,13 +34,22 @@ int main(int argc, char* argv[]) {
     }
 
     pthread_t* threads = (pthread_t*) malloc(threads_count * sizeof(pthread_t));
+    if (threads == NULL) {
+        perror("threads malloc");
+        pthread_exit((void*) EXIT_FAILURE);
+    }
     int* threads_numbers = (int*) malloc(threads_count * sizeof(int));
+    if (threads_numbers == NULL) {
+        perror("threads_numbers malloc");
+        pthread_exit((void*) EXIT_FAILURE);
+    }
+
     int return_value;
     for (int i = 0; i < threads_count; i++) {
         threads_numbers[i] = i;
         return_value = pthread_create(threads + i, NULL, (void*) calculate_pi_part, (void*) &threads_numbers[i]);
         if (0 != return_value) {
-//            fprintf(stderr, "Cannot create a thread: %s", strerror(return_value));
+            fprintf(stderr, "Cannot create a thread: %s", strerror(return_value));
             pthread_exit((void*) EXIT_FAILURE);
         }
     }

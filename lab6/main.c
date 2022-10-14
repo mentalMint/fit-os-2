@@ -16,6 +16,11 @@ void* sort_by_length(const char* line) {
 int main(int argc, char* argv[]) {
     int threads_count = argc - 1;
     pthread_t* threads = (pthread_t*) malloc(threads_count * sizeof(pthread_t));
+    if (threads == NULL) {
+        perror("malloc");
+        pthread_exit((void*) EXIT_FAILURE);
+    }
+
     int return_value;
     for (int i = 0; i < threads_count; i++) {
         return_value = pthread_create(threads + i, NULL, (void*) sort_by_length, (void*) argv[i + 1]);
