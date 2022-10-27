@@ -3,20 +3,21 @@
 #include <stdlib.h>
 #include <string.h>
 #include <limits.h>
+#include <math.h>
 
 #define STEPS_NUM 100
 
 long int threads_count;
 
-double* calculate_pi_part(const int* thread_number) {
+double calculate_pi_part(const int* thread_number) {
     double* pi_part = (double*) malloc(sizeof(double));
     for (int i = 0; i < STEPS_NUM; i++) {
         *pi_part += 1.0 / ((i * (int) threads_count + *thread_number) * 4.0 + 1.0);
         *pi_part -= 1.0 / ((i * (int) threads_count + *thread_number) * 4.0 + 3.0);
     }
 
-    printf("Thread %d Pi_part / 4 = %.15lf \n", *thread_number, *pi_part);
-    return pi_part;
+//    printf("Thread %d Pi_part / 4 = %.15lf \n", *thread_number, *pi_part);
+    return *pi_part;
 }
 
 int main(int argc, char* argv[]) {
@@ -67,7 +68,8 @@ int main(int argc, char* argv[]) {
         free(thread_return_value);
     }
 
-    printf("Pi = %.15lf\n", pi_div_by_4 * 4);
+    printf("\nCalculated Pi = %.15lf\n", pi_div_by_4 * 4);
+    printf("      Real Pi = %.15lf\n", M_PI);
     free(threads);
     pthread_exit((void*) EXIT_SUCCESS);
 }
