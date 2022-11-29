@@ -69,28 +69,28 @@ include CMakeFiles/lab9.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/lab9.dir/flags.make
 
-CMakeFiles/lab9.dir/main.c.o: CMakeFiles/lab9.dir/flags.make
-CMakeFiles/lab9.dir/main.c.o: /mnt/d/Programming/C/Projects/OSLabs/lab9/main.c
-CMakeFiles/lab9.dir/main.c.o: CMakeFiles/lab9.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/Programming/C/Projects/OSLabs/lab9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/lab9.dir/main.c.o"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab9.dir/main.c.o -MF CMakeFiles/lab9.dir/main.c.o.d -o CMakeFiles/lab9.dir/main.c.o -c /mnt/d/Programming/C/Projects/OSLabs/lab9/main.c
+CMakeFiles/lab9.dir/main2.c.o: CMakeFiles/lab9.dir/flags.make
+CMakeFiles/lab9.dir/main2.c.o: /mnt/d/Programming/C/Projects/OSLabs/lab9/main2.c
+CMakeFiles/lab9.dir/main2.c.o: CMakeFiles/lab9.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/mnt/d/Programming/C/Projects/OSLabs/lab9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building C object CMakeFiles/lab9.dir/main2.c.o"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/lab9.dir/main2.c.o -MF CMakeFiles/lab9.dir/main2.c.o.d -o CMakeFiles/lab9.dir/main2.c.o -c /mnt/d/Programming/C/Projects/OSLabs/lab9/main2.c
 
-CMakeFiles/lab9.dir/main.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lab9.dir/main.c.i"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/Programming/C/Projects/OSLabs/lab9/main.c > CMakeFiles/lab9.dir/main.c.i
+CMakeFiles/lab9.dir/main2.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/lab9.dir/main2.c.i"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /mnt/d/Programming/C/Projects/OSLabs/lab9/main2.c > CMakeFiles/lab9.dir/main2.c.i
 
-CMakeFiles/lab9.dir/main.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lab9.dir/main.c.s"
-	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/Programming/C/Projects/OSLabs/lab9/main.c -o CMakeFiles/lab9.dir/main.c.s
+CMakeFiles/lab9.dir/main2.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/lab9.dir/main2.c.s"
+	/usr/bin/gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /mnt/d/Programming/C/Projects/OSLabs/lab9/main2.c -o CMakeFiles/lab9.dir/main2.c.s
 
 # Object files for target lab9
 lab9_OBJECTS = \
-"CMakeFiles/lab9.dir/main.c.o"
+"CMakeFiles/lab9.dir/main2.c.o"
 
 # External object files for target lab9
 lab9_EXTERNAL_OBJECTS =
 
-lab9: CMakeFiles/lab9.dir/main.c.o
+lab9: CMakeFiles/lab9.dir/main2.c.o
 lab9: CMakeFiles/lab9.dir/build.make
 lab9: CMakeFiles/lab9.dir/link.txt
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/mnt/d/Programming/C/Projects/OSLabs/lab9/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking C executable lab9"

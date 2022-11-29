@@ -76,7 +76,7 @@
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/mnt/d/Programming/C/Projects/OSLabs/lab9/main.c">
+		<Unit filename="/mnt/d/Programming/C/Projects/OSLabs/lab9/main2.c">
 			<Option target="lab9"/>
 		</Unit>
 		<Unit filename="/mnt/d/Programming/C/Projects/OSLabs/lab9/CMakeLists.txt">

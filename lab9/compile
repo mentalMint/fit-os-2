@@ -1,2 +1,2 @@
 #!/bin/bash
-gcc -pthread main.c -o execute
+gcc -pthread main2.c -o execute2

@@ -19,11 +19,10 @@
   <component name="ChangeListManager">
     <list default="true" id="abb00167-bed6-48b6-b3e0-5336270ebad7" name="Changes" comment="Add usleep error processing">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/execute" beforeDir="false" afterPath="$PROJECT_DIR$/execute" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab8/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../lab8/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../lab8/execute" beforeDir="false" afterPath="$PROJECT_DIR$/../lab8/execute" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lab8/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../lab8/main.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../lab9/cmake-build-debug/Testing/Temporary/LastTest.log" beforeDir="false" afterPath="$PROJECT_DIR$/../lab9/cmake-build-debug/Testing/Temporary/LastTest.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../lab9/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/../lab9/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -88,7 +87,7 @@
       <option name="presentableId" value="Default" />
       <updated>1665061152402</updated>
       <workItem from="1665061153903" duration="2807000" />
-      <workItem from="1665737882295" duration="735000" />
+      <workItem from="1665737882295" duration="7656000" />
     </task>
     <task id="LOCAL-00001" summary="Initial commit">
       <created>1665061265354</created>

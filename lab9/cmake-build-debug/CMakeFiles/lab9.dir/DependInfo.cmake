@@ -8,7 +8,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/mnt/d/Programming/C/Projects/OSLabs/lab9/main.c" "CMakeFiles/lab9.dir/main.c.o" "gcc" "CMakeFiles/lab9.dir/main.c.o.d"
+  "/mnt/d/Programming/C/Projects/OSLabs/lab9/main2.c" "CMakeFiles/lab9.dir/main2.c.o" "gcc" "CMakeFiles/lab9.dir/main2.c.o.d"
   )
 
 # Targets to which this target links.
